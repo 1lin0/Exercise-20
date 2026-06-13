@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Programming Exercise 20 - Q3</title>
+    <style>
+        /* 1. 表格整體樣式 */
+        table {
+            border-collapse: collapse; /* 合併邊框 */
+            width: 300px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* 2. 表格標頭樣式 (深灰色背景、白字) */
+        th {
+            background-color: #666666;
+            color: white;
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        /* 3. 資料列樣式 (第1、3列為黃色背景，第2列為白色) */
+        td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .yellow-bg {
+            background-color: #FFFF00;
+        }
+
+        /* 4. 右上角固定定位的 div 樣式 */
+        .fixed-box {
+            position: fixed;
+            top: 20px;       /* 距離頂部 20px */
+            right: 20px;     /* 距離右側 20px */
+            width: 150px;
+            height: 100px;
+            border: 2px solid #4CAF50; /* 綠色邊框 */
+            padding: 10px;
+            background-color: white; /* 避免背景透過去 */
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="yellow-bg">
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2</td>
+            </tr>
+            <tr class="yellow-bg">
+                <td>3</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="fixed-box">
+        This div element has position: fixed;
+    </div>
+
+</body>
+</html>
